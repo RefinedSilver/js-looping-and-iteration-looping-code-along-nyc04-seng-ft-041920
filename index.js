@@ -1,13 +1,13 @@
-function writeCards(n, eN){
-  for (let i = n.length-1 ; i >= 0  ;i-- ) {
-    console.log(`Thank you, ${n[i]}, for the wonderful ${eN} gift!`)
+function writeCards(a, n){
+  let cards = []
+  for (let i = 0 ; i < a.length ;i++ ) {
+    cards.push( `Thank you, ${a[i]}, for the wonderful ${n} gift!`,)    
   }
+  return cards
 }
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
 
-function countDown(n, eN){
-  for (let i = n.length-1 ; i >= 0  ;i-- ) {
-    console.log(`Thank you, ${n[i]}, for the wonderful ${eN} gift!`)
+function countDown(n){
+  while (n >= 0) {
+    console.log(n--);
   }
 }
-countDown(["Ada", "Brendan", "Ali"], "birthday");
